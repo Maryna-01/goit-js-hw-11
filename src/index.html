@@ -7,16 +7,16 @@
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
-  <body>
-    <header>
+  <body class="body">
+    <header class="header">
       <form id="search-form">
-        <input
+        <input class="input"
           type="text"
           name="query"
           placeholder="Search for images..."
           required
         />
-        <button type="submit">Search</button>
+        <button class="button" type="submit">Search</button>
       </form>
     </header>
     <main>
@@ -26,6 +26,6 @@
 
     <script type="module" src="./js/pixabay-api.js"></script>
     <script type="module" src="./js/render-functions.js"></script>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

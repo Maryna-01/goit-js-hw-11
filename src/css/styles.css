@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    /* background-color: #333;
+    color: #fff; */
+    padding: 36px;
     text-align: center;
+    gap:  8px;
+
 }
 
 form {
@@ -21,19 +23,33 @@ form {
 input[name="query"] {
     padding: 10px;
     font-size: 16px;
-    border-radius: 4px 0 0 4px;
-    border: none;
+    border-radius: 4px;
     outline: none;
-    width: 300px;
+    width: 272px;
+    border: 1px solid #808080;
+    margin-right: 8px;
+}
+input:hover{
+    border: 1px solid #000000; 
+}
+input.pressed{
+    border: 1px solid #4E75FF; 
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
+    line-height: 24px;
+    font-weight: 400;
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: #4E75FF;
+    color: #FFFFFF;
+}
+.button:hover{
+    background-color: #6C8CFF;
 }
 
 .gallery {
