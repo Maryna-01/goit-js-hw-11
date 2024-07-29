@@ -1,11 +1,11 @@
-import { fetchImages } from './pixabay-api.js';
-import { renderImages, showAlert, clearGallery } from './render-functions.js';
+import { fetchImages } from 'pixabay-api.js';
+import { renderImages, showAlert, clearGallery } from 'render-functions.js';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('#search-form');
 const loader = document.querySelector('.loader');
-let simpleLightbox;
+let simpleLightbox; 
 
 form.addEventListener('submit', async e => {
   e.preventDefault();
