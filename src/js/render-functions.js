@@ -12,7 +12,7 @@ export function renderImages(images) {
                 <p><strong>Downloads:</strong> ${image.downloads}</p>
             </div>
         </a>
-    `
+        `
     )
     .join('');
 }
