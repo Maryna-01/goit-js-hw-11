@@ -17,6 +17,3 @@ export async function fetchImages(query, page = 1, perPage = 12) {
     throw error;
   }
 }
-fetchImages('nature')
-  .then(images => console.log(images))
-  .catch(error => console.error(error));

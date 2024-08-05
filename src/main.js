@@ -1,11 +1,11 @@
-import { fetchImages } from './js/pixabay-api';
-import { renderImages, showAlert, clearGallery } from './js/render-functions';
+import { fetchImages } from './pixabay-api';
+import { renderImages, showAlert, clearGallery } from './render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('#search-form');
 const loader = document.querySelector('.loader');
-let simpleLightbox; 
+let simpleLightbox;
 
 form.addEventListener('submit', async e => {
   e.preventDefault();
@@ -14,7 +14,7 @@ form.addEventListener('submit', async e => {
     showAlert('Please enter a search query!', 'error');
     return;
   }
-  
+
   clearGallery();
   loader.style.display = 'block';
 
@@ -28,6 +28,7 @@ form.addEventListener('submit', async e => {
     } else {
       renderImages(images);
       simpleLightbox = new SimpleLightbox('.gallery a');
+      simpleLightbox.refresh();
     }
   } catch (error) {
     showAlert('An error occurred while fetching images!', 'error');
