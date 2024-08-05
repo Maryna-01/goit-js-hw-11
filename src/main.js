@@ -14,6 +14,7 @@ form.addEventListener('submit', async e => {
     showAlert('Please enter a search query!', 'error');
     return;
   }
+  
   clearGallery();
   loader.style.display = 'block';
 
